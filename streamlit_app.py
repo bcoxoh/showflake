@@ -37,9 +37,9 @@ if ingredients_list:
 
     #if ingredients_string:
       #  session.sql(my_insert_stmt).collect()
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response.json)
+    import requests
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+    st.text(fruityvice_response.json)
 
     time_to_insert = st.button('Submit Order')
     if time_to_insert:
